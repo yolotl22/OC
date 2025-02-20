@@ -1,0 +1,55 @@
+/* Estilos para el input */
+input {
+  width: 500px;
+  height: 40px;
+  font-size: 18px;
+  padding: 8px; /* Añadir padding para mejor legibilidad */
+  box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+  border: 1px solid #ccc; /* Se añadió */
+  border-radius: 4px; /* Bordes redondeados añadidos */
+}
+
+/* Estilos para la lista de productos */
+#lista-de-productos {
+  display: flex;
+  flex-wrap: wrap; /* Se añadió */
+  gap: 10px; /* Espaciado entre productos */
+  padding: 10px; /* Se añadió */
+}
+
+/* Estilos para cada producto */
+.producto {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centrar contenido verticalmente */
+  padding: 10px; /* Espaciado interno */
+  box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Fondo claro */
+  transition: transform 0.2s, box-shadow 0.2s; /* Efecto hover suave */
+}
+
+/* Efecto hover para los productos */
+.producto:hover {
+  transform: scale(1.05); /* Escalar ligeramente al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Estilos para las imágenes dentro de los productos */
+.producto img {
+  width: 70%;
+  height: auto;
+  border-radius: 4px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilos para el título del producto */
+.producto p {
+  margin: 10px 0 0 0; 
+  font-size: 16px;
+  text-align: center;
+  color: #333; /* Color de texto más suave */
+}

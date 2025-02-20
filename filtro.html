@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambiado a español -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link rel="stylesheet" href="filtro.css"> 
+  <title>Filtros en JavaScript</title> 
+</head>
+
+<body>
+  <header>
+    <h1>Lista de productos</h1> <!-- Título principal dentro de un header -->
+  </header>
+
+  <main>
+    <section>
+      <div class="filtro-container">
+        <input
+          type="text"
+          id="input-filtro"
+          placeholder="Escriba un color o tipo (ej: negro, zapato)"
+          aria-label="Buscar productos por color o tipo"
+        >
+        <button id="boton-filtrar">Filtrar</button> <!-- Botón con ID para JavaScript -->
+      </div>
+    </section>
+
+    <section>
+      <div id="lista-de-productos" class="productos-container">
+        <!-- Los productos se insertarán aquí-->
+      </div>
+    </section>
+  </main>
+
+  <script src="filtro.js"></script> <!-- Se cambió la ruta -->
+</body>
+
+</html>
